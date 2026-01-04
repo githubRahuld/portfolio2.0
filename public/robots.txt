@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.google.com/search?q=https://rahuldhakad.dev/sitemap.xml
+Sitemap: https://www.google.com/search?q=https://portfoliord-nine.vercel.app/sitemap.xml
