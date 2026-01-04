@@ -866,7 +866,7 @@ const App = () => {
             </p>
 
             <a
-              href='mailto:rahul@example.com'
+              href='mailto:rahuldhakad201.rd@gmail.com'
               className='inline-flex items-center justify-center px-10 py-5 bg-white text-black font-bold uppercase tracking-widest hover:bg-red-400 transition-all hover:scale-105'
             >
               <Mail className='mr-3' size={20} /> Initialize Chat
