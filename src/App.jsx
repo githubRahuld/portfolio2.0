@@ -443,15 +443,14 @@ const App = () => {
         {/* HERO SECTION */}
         <section
           id='home'
-          className='min-h-screen flex items-center pt-20 px-6 relative overflow-hidden pt-30'
+          className='min-h-screen flex items-center pt-24 md:pt-20 px-6 relative overflow-hidden lg:mt-10'
         >
           <div className='max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center'>
             {/* LEFT SIDE - TEXT CONTENT */}
             <div className='relative z-10 flex flex-col items-start gap-8 text-left'>
               {/* Badge */}
-
               {/* Main Title */}
-              <h1 className='text-6xl sm:text-7xl md:text-8xl font-black text-white leading-[0.9] font-display tracking-tighter mix-blend-overlay'>
+              <h1 className='text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white leading-[1.1] md:leading-[0.9] font-display tracking-tighter mix-blend-overlay'>
                 <span
                   className='block hover:text-red-200 transition-colors duration-700 animate-slide-up'
                   style={{ animationDelay: "0.1s" }}
@@ -475,7 +474,7 @@ const App = () => {
 
               {/* Subtext */}
               <p
-                className='text-lg md:text-xl text-slate-400 max-w-lg leading-relaxed animate-fade-in border-l-2 border-red-500/20 pl-6'
+                className='text-base md:text-xl text-slate-400 max-w-lg leading-relaxed animate-fade-in md:border-l-2 md:border-red-500/20 md:pl-6'
                 style={{ animationDelay: "0.5s" }}
               >
                 I am <strong className='text-white'>Rahul Dhakad</strong>. A
@@ -485,15 +484,15 @@ const App = () => {
 
               {/* CTA Buttons */}
               <div
-                className='flex flex-col sm:flex-row gap-6 mt-4 animate-fade-in'
+                className='flex flex-col sm:flex-row gap-4 mt-4 animate-fade-in w-full sm:w-auto'
                 style={{ animationDelay: "0.7s" }}
               >
                 <button
                   onClick={() => scrollTo("work")}
-                  className='group relative px-8 py-4 bg-white text-black font-bold font-display uppercase tracking-widest overflow-hidden rounded-full transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.4)]'
+                  className='group relative px-8 py-4 bg-white text-black font-bold font-display uppercase tracking-widest overflow-hidden rounded-full transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] w-full sm:w-auto'
                 >
                   <div className='absolute inset-0 bg-gradient-to-r from-red-500 to-red-700 opacity-0 group-hover:opacity-100 transition-opacity duration-500' />
-                  <span className='relative z-10 flex items-center gap-3'>
+                  <span className='relative z-10 flex items-center justify-center gap-3'>
                     Explore Work{" "}
                     <ArrowRight
                       size={18}
@@ -504,7 +503,7 @@ const App = () => {
 
                 <button
                   onClick={() => scrollTo("contact")}
-                  className='px-8 py-4 bg-white/5 border border-white/10 text-white font-bold font-display uppercase tracking-widest rounded-full hover:bg-white/10 hover:border-white/30 transition-all flex items-center gap-3'
+                  className='px-8 py-4 bg-white/5 border border-white/10 text-white font-bold font-display uppercase tracking-widest rounded-full hover:bg-white/10 hover:border-white/30 transition-all flex items-center justify-center gap-3 w-full sm:w-auto'
                 >
                   <Mail size={18} /> Initiate Comms
                 </button>
@@ -513,10 +512,10 @@ const App = () => {
 
             {/* RIGHT SIDE - IMAGE */}
             <div
-              className='relative z-10 flex justify-center md:justify-end animate-fade-in'
+              className='relative z-10 flex justify-center md:justify-end animate-fade-in order-1 md:order-2'
               style={{ animationDelay: "0.9s" }}
             >
-              <div className='relative w-[300px] h-[300px] md:w-[450px] md:h-[450px]'>
+              <div className='relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[450px] md:h-[450px]'>
                 {/* Decorative Elements */}
                 <div className='absolute inset-0 bg-red-600/10 rounded-full blur-[80px] animate-pulse-slow' />
                 <div className='absolute -inset-4 border border-white/5 rounded-full animate-[spin_20s_linear_infinite]' />
